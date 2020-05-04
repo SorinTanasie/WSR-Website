@@ -1,0 +1,22 @@
+.item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 260px;
+    height: 360px;
+    margin: 10px 15px;
+    padding: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(25,45,51,0.15);
+    word-wrap:break-word;
+    .image{
+        width: 60px;
+    }
+    p{
+        width: 100%;
+    }
+    h3{
+        font-size: 27px;
+        color: #314584;
+    }
+}
