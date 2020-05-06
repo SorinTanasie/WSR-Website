@@ -92,6 +92,7 @@ nav input {
       position: fixed;
       z-index: 1500;
       justify-content: space-around !important;
+      background-color: white;
     }
     .nav::before {
       content: "";
@@ -121,8 +122,10 @@ nav input {
     }
     .nav ul {
       position: fixed;
+      width: 80%;
       height: 100vh;
       background: white;
+      top: 80px;
       left: -100%;
       text-align: center;
       transition: 0.5s;

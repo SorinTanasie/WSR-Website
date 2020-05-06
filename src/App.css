@@ -1,6 +1,11 @@
 *{
   text-decoration: none;
+  box-sizing: border-box;
 }
 body{
   font-family:'Work Sans', sans-serif;;
+}
+.App{
+  max-width: 1800px;
+  margin: 0 auto;
 }
