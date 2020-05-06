@@ -11,6 +11,7 @@ const Services = () => (
         <h2>Anything you need,we’ve got you covered</h2>
         <Button>Get in Touch</Button>
     </div>
+    <div className="items">
     <Item
       imgSrc={Design}
       hText="Web & Graphic Design"
@@ -21,6 +22,7 @@ const Services = () => (
       hText="Web & App Development"
       pText="lasdasdasfagvsavsfjaggsldfkma;skdmasdasdasdasdasd"
     />
+    </div>
   </div>
 );
 

@@ -46,7 +46,7 @@ export default class extends React.Component {
           />
 
         <CustomButton type="submit" value="Submit" onClick={this.handleSubmit}>
-          Submit
+          Trimite mesajul
         </CustomButton>
       </form>
     );

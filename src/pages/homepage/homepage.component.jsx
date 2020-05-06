@@ -8,10 +8,13 @@ import Form from '../../components/form/form.component'
 import "./homepage.styles.scss";
 
 const Homepage = () => (
-    <div >
-      <Nav/>
+  
+  <div><Nav/>
+    <div className="container">
+      
       <Services/>
       <Form/>
+    </div>
     </div>
 );
 

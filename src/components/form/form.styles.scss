@@ -5,8 +5,7 @@
   }
 .form{
 
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
 
     h3{
         font-size: 46px;
@@ -14,9 +13,10 @@
         color: #314584;
     }
     .group:nth-child(3){
-        margin:10px 0;
+        margin: 10px 0;
 
         .form-input{
+            margin: 0px;    
             height: 100px;
         }
     }
@@ -58,6 +58,22 @@
 
     .button{
         display: block;
-        margin: 0 auto;
+        margin: 30px auto;
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    .name-email{
+        flex-direction: column;
+
+        .form-input{
+            margin: 25px 0;
+        }
+    }
+
+    .group:nth-child(3){
+        margin: 25px 0!important;
     }
 }

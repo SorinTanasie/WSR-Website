@@ -1,10 +1,10 @@
 
 .nav {
     height: 80px;
-    width: 100%;
+    width:100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 10%;
+    
   }
   .nav .logo{
     width: 10rem;
@@ -44,8 +44,8 @@ nav input {
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      justify-content: center;
-      width: 50%;
+      justify-content: flex-end;
+      width: 100%;
   }
   .contact{
       padding:15px 20px;
@@ -91,8 +91,8 @@ nav input {
     nav {
       position: fixed;
       z-index: 1500;
-      justify-content: space-around !important;
       background-color: white;
+      padding: 0 !important;
     }
     .nav::before {
       content: "";
@@ -146,8 +146,8 @@ nav input {
     .contact {
 
         padding: 10px 15px;
-        width: 106px;
-        font-size: 13px;
+        width: 130px;
+        font-size: 12px;
     
     i{
         display: none;
@@ -155,7 +155,5 @@ nav input {
 }
 }
 @media (min-width: 1025px) {
-    .menu{
-        width: 50%;
-    }
+    
 }
