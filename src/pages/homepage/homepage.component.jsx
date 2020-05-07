@@ -6,7 +6,7 @@ import Services from '../../components/services/services.component';
 import Form from '../../components/form/form.component'
 import Intro from '../../components/intro/Intro';
 import About from '../../components/about-us/About';
-
+import Portofolio from '../../components/portofolio/Portofolio';
 import "./homepage.styles.scss";
 
 const Homepage = () => (
@@ -19,6 +19,7 @@ const Homepage = () => (
       <Intro />
       <Services/>
       <About />
+      <Portofolio />
       <Form/>
     </div>
 
