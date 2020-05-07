@@ -6,6 +6,9 @@ import Services from '../../components/services/services.component';
 import Form from '../../components/form/form.component'
 import Intro from '../../components/intro/Intro';
 import About from '../../components/about-us/About';
+import Portofolio from '../../components/portofolio/Portofolio';
+import News from '../../components/news/News';
+
 
 import "./homepage.styles.scss";
 
@@ -19,6 +22,8 @@ const Homepage = () => (
       <Intro />
       <Services/>
       <About />
+      <Portofolio />
+      <News />
       <Form/>
     </div>
 
