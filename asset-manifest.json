@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/WSR-Website/static/css/main.2dd77786.chunk.css",
+    "main.js": "/WSR-Website/static/js/main.8cf199b7.chunk.js",
+    "main.js.map": "/WSR-Website/static/js/main.8cf199b7.chunk.js.map",
+    "runtime-main.js": "/WSR-Website/static/js/runtime-main.5609a131.js",
+    "runtime-main.js.map": "/WSR-Website/static/js/runtime-main.5609a131.js.map",
+    "static/js/2.76b3c3a8.chunk.js": "/WSR-Website/static/js/2.76b3c3a8.chunk.js",
+    "static/js/2.76b3c3a8.chunk.js.map": "/WSR-Website/static/js/2.76b3c3a8.chunk.js.map",
+    "index.html": "/WSR-Website/index.html",
+    "precache-manifest.fb84ac49eac0274373e406f5df202285.js": "/WSR-Website/precache-manifest.fb84ac49eac0274373e406f5df202285.js",
+    "service-worker.js": "/WSR-Website/service-worker.js",
+    "static/css/main.2dd77786.chunk.css.map": "/WSR-Website/static/css/main.2dd77786.chunk.css.map",
+    "static/js/2.76b3c3a8.chunk.js.LICENSE.txt": "/WSR-Website/static/js/2.76b3c3a8.chunk.js.LICENSE.txt",
+    "static/media/Illustration.png": "/WSR-Website/static/media/Illustration.bad5cea4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5609a131.js",
+    "static/js/2.76b3c3a8.chunk.js",
+    "static/css/main.2dd77786.chunk.css",
+    "static/js/main.8cf199b7.chunk.js"
+  ]
+}
