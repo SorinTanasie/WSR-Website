@@ -28,7 +28,7 @@ const Nav = () =>{
         </ul>
         </div>
         <div className="contact-container">
-        <a className="contact" href="#">Contacteaza-ne! <i class="fas fa-long-arrow-alt-right"></i></a>
+        <a className="contact" href="#">Contacteaza-ne! <i className="fas fa-long-arrow-alt-right"></i></a>
         </div>
     </nav>
     )
