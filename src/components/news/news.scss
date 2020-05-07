@@ -47,3 +47,24 @@
         }
     }
 }
+
+
+@media (max-width: 858px) {
+
+    .news-container {
+
+        .news-cards {
+            display: flex;
+            flex-direction: column;
+            
+            .card {
+                margin: 1em auto;
+                width: 300px;
+            }
+        }
+    }
+    
+    
+
+    
+}
