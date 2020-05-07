@@ -1,0 +1,61 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    margin: 4em 0;
+    width: 100%;
+
+
+    .about-image {
+        width: 49%;
+
+        .ab-img {
+            width: 95%;
+            height: 300px;
+
+        }
+    }
+
+    .about-text {
+        // border: 1px solid red;
+        width: 49%;
+        // margin-left: 1%;
+
+        span {
+            color: red;
+            font-size: .9em;
+        }
+
+        h1 {
+            color: #314584;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: .9em;
+            line-height: 1.5em;
+        }
+
+    }
+}
+
+
+
+@media (max-width: 858px) {
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+
+        .about-image {
+            display: none;
+        }
+    
+        .about-text {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    
+}
