@@ -1,12 +1,15 @@
 import React from 'react';
 import './About.scss';
-import image from '../../Assets/Illustration.png';
+import {ReactComponent as Image} from '../../Assets/Vector Illustration.svg';
+import {ReactComponent as Shape} from '../../Assets/BgShape2.svg';
 
 
 const About = () => (
     <div className="about">
+        <Shape className="shape"/>
+        
         <div className="about-image">
-            <img src={image} className="ab-img" />
+            <Image className="ab-img" />
         </div>
 
         <div className="about-text">

@@ -6,6 +6,9 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1500;
+    .form{
+      margin:0;
+    }
   
     .modal-main {
       position:fixed;

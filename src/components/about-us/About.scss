@@ -1,16 +1,25 @@
 .about {
     display: flex;
     flex-direction: row;
-    margin: 4em 0;
+    margin: 6em 0;
     width: 100%;
+    .shape{
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        width: 100%;
+        max-width: 278px;
+        height: auto;
+    }
+
 
 
     .about-image {
         width: 49%;
 
         .ab-img {
-            width: 95%;
-            height: 300px;
+            width: 100%;
+            height: auto
 
         }
     }
@@ -47,7 +56,7 @@
         text-align: center;
 
         .about-image {
-            display: none;
+            width: 100%;
         }
     
         .about-text {
