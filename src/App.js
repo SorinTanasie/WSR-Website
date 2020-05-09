@@ -19,12 +19,12 @@ function App() {
       <Navbar />
       
       <Switch>
-        <Route exact path="/" component={Homepage} />
 
         <Route exact path="/despre-noi" component={AboutUs} />
 
         <Route exact path="/portofoliu" component={PortoPage} />
 
+        <Route  path="/" component={Homepage} />
 
 
       </Switch>
