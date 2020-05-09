@@ -1,9 +1,11 @@
 import React from 'react';
 
-
 const AboutUs = () => {
     return (
-        <p>this is AboutUs</p>
+
+        <div>
+            <p>this is about-us page</p>
+        </div>
     )
 }
 

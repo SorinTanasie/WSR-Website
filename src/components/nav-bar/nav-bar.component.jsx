@@ -4,7 +4,7 @@ import Modal from "../modal/modal.component";
 import Form from"../form/form.component";
 
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PortofolioPage from '../router-pages/portofolio-page';
 import AboutUs from '../router-pages/about-us';
 
@@ -28,7 +28,7 @@ class Nav extends React.Component{
     render(){
     return(
 
-<Router>
+
     <nav className="nav">
         <div className="menu">
         <input type="checkbox" />
@@ -39,18 +39,17 @@ class Nav extends React.Component{
         <a href="#">
             Logo
         </a>
-        
         <ul>
           <li>
             <Link to="/">Acasa</Link>
           </li>
 
           <li>
-            <Link to="/about-us">Despre noi</Link>
+            <Link to="/despre-noi">Despre noi</Link>
           </li>
 
           <li>
-            <Link to="/portofolio">Portofoliu</Link>
+            <Link to="/portofoliu">Portofoliu</Link>
           </li>
 
         </ul>
@@ -67,7 +66,6 @@ class Nav extends React.Component{
     </nav>
 
 
-</Router>
     )
   }
 };

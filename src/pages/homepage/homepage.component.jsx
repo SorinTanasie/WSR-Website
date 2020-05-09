@@ -18,7 +18,6 @@ import "./homepage.styles.scss";
 const Homepage = () => (
   
   <div>
-    <Nav/>
     <Intro />
 
     <div className="container">
@@ -30,7 +29,6 @@ const Homepage = () => (
       <Form/>
       
     </div>
-    <Footer/>
   </div>
 );
 
