@@ -3,9 +3,10 @@ import "./portofolio.styles.scss";
 import Intro from '../../components/intro/Intro';
 import image from "../../Assets/man-meditating.png";
 import Image2 from "../../Assets/BgShape.png";
+import Switch from "../../components/switch/switch.component"
 
 class Portofolio extends React.Component {
-  state = { show: false }
+  state = { show: true }
   showFirst = () => {
     this.setState({ show: true });
   }
@@ -23,16 +24,10 @@ render(){
       shape={Image2}
     />
 
-    <div className="switch">
-        <h1 class="clienti switch-active" onClick={this.showFirst}>Clienti</h1>
-        <h1 class="furnizori" onClick={this.showSecound}>Furnizori</h1>
-    </div>
-    <div className="sectiunea1">
-
-    </div>
-    <div className="sectiunea2">
-
-    </div>
+    
+    
+  <Switch showFirst={this.showFirst} showSecound={this.showSecound} show={this.state.show} content1={<p>content1</p>} content2={<p>content2</p>}/>
+    
   </div>
   )
 }
