@@ -23,7 +23,6 @@ const Homepage = () => (
 
     <div className="container">
 
-      
       <Services/>
       <About />
       <Portofolio />

@@ -42,7 +42,7 @@ class Nav extends React.Component{
           <Form/>
         </Modal>
         <div className="contact-container">
-        <a className="contact" href="#" onClick={this.showModal}>Contacteaza-ne! <i className="fas fa-long-arrow-alt-right"></i></a>
+        <a className="contact" onClick={this.showModal}>Contacteaza-ne! <i className="fas fa-long-arrow-alt-right"></i></a>
         </div>
     </nav>
     )

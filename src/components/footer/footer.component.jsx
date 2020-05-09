@@ -14,8 +14,8 @@ const Footer = ()=>(
 
         <p> © 2019 - WSR,All Right Reserved</p>
         <div className="icons">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-instagram"></a>
         </div>
 
     </div>
