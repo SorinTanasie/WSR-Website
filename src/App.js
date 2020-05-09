@@ -9,8 +9,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Navbar from './components/nav-bar/nav-bar.component';
 import Footer from './components/footer/footer.component';
 
-import PortoPage from './components/router-pages/portofolio-page';
-import AboutUs from './components/router-pages/about-us';
+import PortoPage from './pages/portofolio/portofolio.component';
+import AboutUs from './pages/about-us/about-us.component';
 
 
 function App() {

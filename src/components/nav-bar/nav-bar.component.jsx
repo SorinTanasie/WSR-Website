@@ -5,8 +5,6 @@ import Form from"../form/form.component";
 
 
 import { Link } from 'react-router-dom';
-import PortofolioPage from '../router-pages/portofolio-page';
-import AboutUs from '../router-pages/about-us';
 
 
 
@@ -41,15 +39,15 @@ class Nav extends React.Component{
         </a>
         <ul>
           <li>
-            <Link to="/">Acasa</Link>
+            <Link to="/" onClick={this.click}>Acasa</Link>
           </li>
 
           <li>
-            <Link to="/despre-noi">Despre noi</Link>
+            <Link to="/despre-noi" onClick={this.click}>Despre noi</Link>
           </li>
 
           <li>
-            <Link to="/portofoliu">Portofoliu</Link>
+            <Link to="/portofoliu" onClick={this.click}>Portofoliu</Link>
           </li>
 
         </ul>

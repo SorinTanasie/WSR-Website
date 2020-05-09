@@ -1,27 +1,22 @@
-import React from 'react';
-import './Intro.scss';
-import image from '../../Assets/Illustration.png';
-import Image2 from '../../Assets/BgShape.png';
+import React from "react";
+import "./Intro.scss";
 
-const Intro = () => (
-
-    <div className="intro-container">
-        <div className="intro-text">
-            <h1>The Spirit of Digital Agency.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non elit vel enim egestas dignissim ac a nunc.</p>
-            <div className="buttons">
-            <button className="button">More about us</button>
-            <button className="unstyled-button">Get in touch</button>
-            </div>
-
-        </div>
-        
-        <div className="intro-image">
-            
-            <img  src={Image2} className="shape2"/>
-            <img className="shape" src={image} />
-        </div>
+const Intro = ({hText, pText, image, shape}) => (
+  <div className="intro-container">
+    <div className="intro-text">
+      <h1>{hText}</h1>
+      <p>{pText}</p>
+      <div className="buttons">
+        <button className="button">More about us</button>
+        <button className="unstyled-button">Get in touch</button>
+      </div>
     </div>
-)
+
+    <div className="intro-image">
+      <img src={shape} className="shape2" />
+      <img className="shape" src={image} />
+    </div>
+  </div>
+);
 
 export default Intro;
