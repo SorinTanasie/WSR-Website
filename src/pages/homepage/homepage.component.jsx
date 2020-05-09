@@ -14,6 +14,9 @@ import Footer from "../../components/footer/footer.component";
 import image from "../../Assets/Illustration.png";
 import Image2 from "../../Assets/BgShape.png";
 
+import logo from '../../Assets/Vector Illustration.svg';
+
+
 import "./homepage.styles.scss";
 
 const Homepage = () => (
@@ -27,7 +30,7 @@ const Homepage = () => (
 
     <div className="container">
       <Services />
-      <About />
+      <About logo={logo} />
       <Portofolio />
       <News />
       <Form />
