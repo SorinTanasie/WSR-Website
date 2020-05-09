@@ -4,6 +4,12 @@ import Modal from "../modal/modal.component";
 import Form from"../form/form.component";
 
 
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import PortofolioPage from '../router-pages/portofolio-page';
+import AboutUs from '../router-pages/about-us';
+
+
+
 class Nav extends React.Component{
   state = { show: false }
   
@@ -21,6 +27,8 @@ class Nav extends React.Component{
     }
     render(){
     return(
+
+<Router>
     <nav className="nav">
         <div className="menu">
         <input type="checkbox" />
@@ -33,20 +41,37 @@ class Nav extends React.Component{
         </a>
         
         <ul>
-          <li><a className="active" href="#">Acasa</a></li>
-          <li><a href="#">Despre Noi</a></li>
-          <li><a href="#">Portofoliu</a></li>
+          <li>
+            <Link to="/">Acasa</Link>
+          </li>
+
+          <li>
+            <Link to="/about-us">Despre noi</Link>
+          </li>
+
+          <li>
+            <Link to="/portofolio">Portofoliu</Link>
+          </li>
+
         </ul>
+
         </div>
+
         <Modal show={this.state.show} handleClose={this.hideModal} >
           <Form/>
         </Modal>
+
         <div className="contact-container">
         <a className="contact" onClick={this.showModal}>Contacteaza-ne! <i className="fas fa-long-arrow-alt-right"></i></a>
         </div>
     </nav>
+
+
+</Router>
     )
   }
 };
+
+
 
 export default Nav;
