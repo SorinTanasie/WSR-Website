@@ -13,8 +13,8 @@ const Intro = ({hText, pText, image, shape}) => (
     </div>
 
     <div className="intro-image">
-      <img src={shape} className="shape2" />
-      <img className="shape" src={image} />
+      <img src={shape} alt="Shape" className="shape2" />
+      <img className="shape" alt="Image"  src={image} />
     </div>
   </div>
 );

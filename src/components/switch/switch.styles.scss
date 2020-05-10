@@ -4,9 +4,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-      }
+        flex-wrap: wrap;
+    }
     .switch h1 {
         font-size: 45px;
         border-bottom: 5px solid rgba(254, 182, 22, 0.5);
         transition: 0.5s;
+        cursor: pointer;
       }
+      
+    .switch-active {
+        color: black;
+        border-bottom: 5px solid  rgba(254, 182, 22, 1) !important ;
+      }
+    

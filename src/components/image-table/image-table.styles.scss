@@ -1,0 +1,43 @@
+.portofolio-images {
+
+
+    .portofolio-row {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+            min-width: 200px;
+            margin: 1em 1em;
+            cursor: pointer;
+            
+            &:hover {
+                opacity: .5;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 858px) {
+
+        .portofolio-images {
+            margin: 0;
+    
+            .portofolio-row {
+                flex-wrap: wrap;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    background: blue;
+                }
+            }
+            
+        }
+    
+
+    
+}
