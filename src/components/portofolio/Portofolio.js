@@ -9,7 +9,7 @@ const Portofolio = () => (
     <Shape className="shape" />
 
     <div className="portofolio-text">
-      <h1>See some of our work</h1>
+      <h2>See some of our work</h2>
     </div>
 
     <ImageTable

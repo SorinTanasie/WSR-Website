@@ -8,7 +8,7 @@ const About = ({smallText, title, firstP, secondP, thirdP}) => (
         <div className="about-text">
             <span>{smallText}</span>
 
-            <h1>{title}</h1>
+            <h2>{title}</h2>
 
             <p>{firstP}</p>
             <p>{secondP}</p>

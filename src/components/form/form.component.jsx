@@ -15,7 +15,7 @@ export default class extends React.Component {
   render() {
     return (
       <form className="form">
-        <h3>Get in touch</h3>
+        <h2>Get in touch</h2>
         <div className="name-email">
           <FormInput
             name="email"

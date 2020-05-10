@@ -6,18 +6,18 @@ const Switch = ({ show, showFirst, showSecound, content1, content2 }) => {
   return (
     <div>
       <div className="switch">
-        <h1
+        <button
           class={` ${show ? "switch-active" : ""}`}
           onClick={showFirst}
         >
-          Design
-        </h1>
-        <h1
+          UI/UX
+        </button>
+        <button
           class={`${show ? "" : "switch-active"}`}
           onClick={showSecound}
         >
-          Web Development
-        </h1>
+          Websites
+        </button>
       </div>
 
       <div className="sectiune">{show ? content1 : content2}</div>

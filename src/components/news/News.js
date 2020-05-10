@@ -8,7 +8,7 @@ const News = () => (
         <Shape className="shape" />
         <div className="news-text">
             <span>News Section</span>
-            <h1>Check our news</h1>
+            <h2>Check our news</h2>
         </div>
 
         <div className="news-cards">

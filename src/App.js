@@ -34,7 +34,7 @@ function App() {
         <Footer />
       </Router>
 
-      <Circle2 color={'#314584'} />;
+      <Circle2 color={'#314584'} />
 
     </div>
 
