@@ -53,20 +53,23 @@ export default class extends React.Component {
   }
 
   handleChange = (e) => {
+    
     const { value, name } = e.target;
 
     this.setState({ [name]: value });
   };
   handleSubmit(event) {
+    event.preventDefault();
     const templateId = "template_7YBje3Jq";
     const { name, email, feedback } = this.state;
-    name & email & feedback
-      ? this.sendFeedback(templateId, {
+    if(email&& name&& feedback!==''){
+       this.sendFeedback(templateId, {
           message_html: this.state.feedback,
           from_name: this.state.name,
           reply_to: this.state.email,
         })
-      : console.log("err");
+  }
+      else console.log("err");
   }
 
   sendFeedback(templateId, variables) {
