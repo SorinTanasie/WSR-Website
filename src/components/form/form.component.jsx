@@ -1,13 +1,14 @@
 import React from "react";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../button/button.component";
+import PopUp from '../pop-up/pop-up.component';
 
 import './form.styles.scss';
 
 export default class extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { feedback: "", name: "", email: "" };
+    this.state = { feedback: "", name: "", email: "", isSubmitted: false};
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -44,10 +45,11 @@ export default class extends React.Component {
             required
             label="Mesaj"
           />
-
+          
         <CustomButton type="submit" value="Submit" onClick={this.handleSubmit}>
           Trimite mesajul
         </CustomButton>
+        {this.state.isSubmitted && <PopUp/>}
       </form>
     );
   }
@@ -58,15 +60,14 @@ export default class extends React.Component {
 
     this.setState({ [name]: value });
   };
-  handleSubmit(event) {
-    event.preventDefault();
+  handleSubmit() {
     const templateId = "template_7YBje3Jq";
     const { name, email, feedback } = this.state;
     if(email&& name&& feedback!==''){
        this.sendFeedback(templateId, {
-          message_html: this.state.feedback,
-          from_name: this.state.name,
-          reply_to: this.state.email,
+          message_html: feedback,
+          from_name: name,
+          reply_to: email,
         })
   }
       else console.log("err");
@@ -77,6 +78,7 @@ export default class extends React.Component {
       .send("default_service", templateId, variables)
       .then((res) => {
         console.log("Email successfully sent!");
+        this.setState({isSubmitted:true});
       })
       // Handle errors here however you like, or use a React error boundary
       .catch((err) =>

@@ -9,7 +9,6 @@ import Intro from "../../components/intro/Intro";
 import About from "../../components/about-us/About";
 import Portofolio from "../../components/portofolio/Portofolio";
 import News from "../../components/news/News";
-import Footer from "../../components/footer/footer.component";
 
 import image from "../../Assets/Illustration.png";
 import Image2 from "../../Assets/BgShape.png";

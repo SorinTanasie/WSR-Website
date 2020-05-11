@@ -1,0 +1,19 @@
+.pop-up{
+    width: 50%;
+    background-color: green;
+    text-align: center;
+    color: white;
+    display: block;
+    border-radius: 20px;
+    animation: cssAnimation  5s ;
+
+    @keyframes cssAnimation {
+        to {
+            display: none;
+        }
+    }
+    .d-none{
+        display: none;
+    }
+}
+
