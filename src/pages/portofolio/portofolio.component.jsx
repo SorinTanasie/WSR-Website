@@ -11,7 +11,15 @@ import Logo from '../../Assets/Logo.jpg';
 
 import Website from '../../Assets/Website2.png'
 import AgroWebsite from '../../Assets/Agro-Auto.jpg'
-import Website2 from '../../Assets/Website3.png'
+import Website2 from '../../Assets/Website3.png';
+
+import Image1 from '../../Assets/portofoliu/abc-final.jpg';
+import Image7 from '../../Assets/portofoliu/Bm1final.png';
+import Image3 from '../../Assets/portofoliu/caprioaralogo.jpg';
+import Image4 from '../../Assets/portofoliu/Logo.jpg';
+import Image5 from '../../Assets/portofoliu/pixelsmecherfinal.jpg';
+import Image6 from '../../Assets/portofoliu/x-shoes.jpg';
+
 
 class Portofolio extends React.Component {
   state = { show: true };
@@ -37,7 +45,13 @@ class Portofolio extends React.Component {
           showSecound={this.showSecound}
           show={this.state.show}
           content1={<div className="design"><ImageTable
-            imgSrc={Logo}/></div>}
+          imgSrc1={Image1}
+          imgSrc2={Image7}
+          imgSrc3={Image3}
+          imgSrc4={Image4}
+          imgSrc5={Image5}
+          imgSrc6={Image6}
+          /></div>}
           content2={<div className="web-container">
           <ScrollImage 
           link=""

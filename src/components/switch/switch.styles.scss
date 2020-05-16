@@ -9,8 +9,8 @@
 
  .switch button {
     
-    background: #314584;
-    color: white;
+    background: white;
+    color: #314584;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
     transition: 1s ;
     border-bottom: 1px solid #314584;
@@ -21,8 +21,8 @@
     
 .switch-active {
 	border-bottom: 3px solid  black !important ;
-    background-color: white !important;
-    color: #314584 !important;
+    background-color: #314584 !important;
+    color: white !important;
 }
   
 
