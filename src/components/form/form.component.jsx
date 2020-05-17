@@ -2,6 +2,7 @@ import React from "react";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../button/button.component";
 import PopUp from '../pop-up/pop-up.component';
+import Swal from 'sweetalert2'
 
 import './form.styles.scss';
 
@@ -79,6 +80,11 @@ export default class extends React.Component {
       .then((res) => {
         console.log("Email successfully sent!");
         this.setState({isSubmitted:true});
+        Swal.fire(
+          'Good job!',
+          'You clicked the button!',
+          'success'
+        )
       })
       // Handle errors here however you like, or use a React error boundary
       .catch((err) =>
